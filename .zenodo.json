@@ -1,8 +1,10 @@
 {
   "title": "Estimating PV Short-Circuit Current From Weather: Clean vs. Dusty Modules (code, data and results)",
   "upload_type": "software",
+  "version": "1.0.0",
+  "access_right": "open",
   "creators": [{"name": "Hoque, Khandoker Samiul", "orcid": "0009-0008-0756-2395"}],
   "description": "Held-out-day reanalysis of BSc thesis field data from two side-by-side PV modules, one clean and one soiled, logged over five months. Compares a time-of-day baseline, linear regression and random forest with month-level bootstrap intervals.",
-  "license": "MIT",
+  "license": "mit",
   "keywords": ["photovoltaics", "soiling", "short-circuit current", "random forest", "solar energy"]
 }
