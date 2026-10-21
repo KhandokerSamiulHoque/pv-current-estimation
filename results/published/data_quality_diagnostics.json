@@ -1,0 +1,282 @@
+[
+  {
+    "file":"only_November_train.csv",
+    "rows_raw":27761,
+    "rows_usable":27638,
+    "rows_dropped":123,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":123,
+      "pressure_outside_[800,1100]_hPa":123
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.16,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1000.27,
+    "pressure_max_hpa":1015.98,
+    "recorded_days_from_clock_resets":21,
+    "partition":"train",
+    "month":"November"
+  },
+  {
+    "file":"November_test.csv",
+    "rows_raw":1412,
+    "rows_usable":1412,
+    "rows_dropped":0,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.18,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1011.21,
+    "pressure_max_hpa":1015.51,
+    "recorded_days_from_clock_resets":1,
+    "partition":"test",
+    "month":"November"
+  },
+  {
+    "file":"only_December_train.csv",
+    "rows_raw":29791,
+    "rows_usable":29705,
+    "rows_dropped":86,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":1,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":85,
+      "pressure_outside_[800,1100]_hPa":85
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.15,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1007.19,
+    "pressure_max_hpa":1019.51,
+    "recorded_days_from_clock_resets":22,
+    "partition":"train",
+    "month":"December"
+  },
+  {
+    "file":"December_test.csv",
+    "rows_raw":1071,
+    "rows_usable":1071,
+    "rows_dropped":0,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.37,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1013.83,
+    "pressure_max_hpa":1018.15,
+    "recorded_days_from_clock_resets":1,
+    "partition":"test",
+    "month":"December"
+  },
+  {
+    "file":"only_January_train.csv",
+    "rows_raw":35396,
+    "rows_usable":35396,
+    "rows_dropped":0,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":2,
+    "humidity_min":0.15,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1009.83,
+    "pressure_max_hpa":1021.17,
+    "recorded_days_from_clock_resets":26,
+    "partition":"train",
+    "month":"January"
+  },
+  {
+    "file":"January_test.csv",
+    "rows_raw":1504,
+    "rows_usable":1504,
+    "rows_dropped":0,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.33,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1011.39,
+    "pressure_max_hpa":1015.45,
+    "recorded_days_from_clock_resets":1,
+    "partition":"test",
+    "month":"January"
+  },
+  {
+    "file":"only_February_train.csv",
+    "rows_raw":24042,
+    "rows_usable":24042,
+    "rows_dropped":0,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.12,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1006.59,
+    "pressure_max_hpa":1021.06,
+    "recorded_days_from_clock_resets":18,
+    "partition":"train",
+    "month":"February"
+  },
+  {
+    "file":"February_test.csv",
+    "rows_raw":1441,
+    "rows_usable":1441,
+    "rows_dropped":0,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.2,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1011.47,
+    "pressure_max_hpa":1015.4,
+    "recorded_days_from_clock_resets":1,
+    "partition":"test",
+    "month":"February"
+  },
+  {
+    "file":"only_March_train.csv",
+    "rows_raw":28663,
+    "rows_usable":28662,
+    "rows_dropped":1,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":1,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.12,
+    "humidity_max":0.95,
+    "pressure_min_hpa":1007.43,
+    "pressure_max_hpa":1019.43,
+    "recorded_days_from_clock_resets":21,
+    "partition":"train",
+    "month":"March"
+  },
+  {
+    "file":"March_test.csv",
+    "rows_raw":1444,
+    "rows_usable":1444,
+    "rows_dropped":0,
+    "coercions_to_missing":{
+      "Clean Module Temperature (c)":0,
+      "Dusty Module Temperature (c)":0,
+      "Wind Speed (m\/s)":0,
+      "Humidity (%)":0,
+      "Air Pressure (hPa)":0,
+      "Tr (Hour)":0,
+      "Clean Module Short Circuit Current (mA)":0,
+      "Dusty Module Short Circuit Current (mA)":0
+    },
+    "invalid_physical_values_set_missing":{
+      "humidity_outside_(0,1]":0,
+      "pressure_outside_[800,1100]_hPa":0
+    },
+    "duplicate_rows_on_model_fields":0,
+    "humidity_min":0.15,
+    "humidity_max":0.68,
+    "pressure_min_hpa":1009.76,
+    "pressure_max_hpa":1014.09,
+    "recorded_days_from_clock_resets":1,
+    "partition":"test",
+    "month":"March"
+  }
+]

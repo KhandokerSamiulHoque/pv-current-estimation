@@ -1,0 +1,432 @@
+{
+  "analysis_definition": {
+    "task": "conditional short-circuit-current estimation from same-time recorded meteorological and module-temperature inputs",
+    "not_claimed": "day-ahead weather forecasting",
+    "features": [
+      "Clean Module Temperature (c)",
+      "Dusty Module Temperature (c)",
+      "Wind Speed (m/s)",
+      "Humidity (%)",
+      "Air Pressure (hPa)",
+      "Tr (Hour)"
+    ],
+    "targets": [
+      "Clean Module Short Circuit Current (mA)",
+      "Dusty Module Short Circuit Current (mA)"
+    ],
+    "evaluation": "five rolling monthly origins; each current-month final-day file held out; prior held-out days become historical for later origins",
+    "rf": {
+      "n_estimators": 80,
+      "criterion": "squared_error",
+      "max_features": 1.0,
+      "min_samples_leaf": 2,
+      "max_depth": 24,
+      "random_state": 42
+    },
+    "uncertainty": "95% percentile bootstrap over five month blocks; descriptive because n=5"
+  },
+  "quality": [
+    {
+      "file": "only_November_train.csv",
+      "rows_raw": 27761,
+      "rows_usable": 27638,
+      "rows_dropped": 123,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 123,
+        "pressure_outside_[800,1100]_hPa": 123
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.16,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1000.27,
+      "pressure_max_hpa": 1015.98,
+      "recorded_days_from_clock_resets": 21,
+      "partition": "train",
+      "month": "November"
+    },
+    {
+      "file": "November_test.csv",
+      "rows_raw": 1412,
+      "rows_usable": 1412,
+      "rows_dropped": 0,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.18,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1011.21,
+      "pressure_max_hpa": 1015.51,
+      "recorded_days_from_clock_resets": 1,
+      "partition": "test",
+      "month": "November"
+    },
+    {
+      "file": "only_December_train.csv",
+      "rows_raw": 29791,
+      "rows_usable": 29705,
+      "rows_dropped": 86,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 1,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 85,
+        "pressure_outside_[800,1100]_hPa": 85
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.15,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1007.19,
+      "pressure_max_hpa": 1019.51,
+      "recorded_days_from_clock_resets": 22,
+      "partition": "train",
+      "month": "December"
+    },
+    {
+      "file": "December_test.csv",
+      "rows_raw": 1071,
+      "rows_usable": 1071,
+      "rows_dropped": 0,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.37,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1013.83,
+      "pressure_max_hpa": 1018.15,
+      "recorded_days_from_clock_resets": 1,
+      "partition": "test",
+      "month": "December"
+    },
+    {
+      "file": "only_January_train.csv",
+      "rows_raw": 35396,
+      "rows_usable": 35396,
+      "rows_dropped": 0,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 2,
+      "humidity_min": 0.15,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1009.83,
+      "pressure_max_hpa": 1021.17,
+      "recorded_days_from_clock_resets": 26,
+      "partition": "train",
+      "month": "January"
+    },
+    {
+      "file": "January_test.csv",
+      "rows_raw": 1504,
+      "rows_usable": 1504,
+      "rows_dropped": 0,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.33,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1011.39,
+      "pressure_max_hpa": 1015.45,
+      "recorded_days_from_clock_resets": 1,
+      "partition": "test",
+      "month": "January"
+    },
+    {
+      "file": "only_February_train.csv",
+      "rows_raw": 24042,
+      "rows_usable": 24042,
+      "rows_dropped": 0,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.12,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1006.59,
+      "pressure_max_hpa": 1021.06,
+      "recorded_days_from_clock_resets": 18,
+      "partition": "train",
+      "month": "February"
+    },
+    {
+      "file": "February_test.csv",
+      "rows_raw": 1441,
+      "rows_usable": 1441,
+      "rows_dropped": 0,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.2,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1011.47,
+      "pressure_max_hpa": 1015.4,
+      "recorded_days_from_clock_resets": 1,
+      "partition": "test",
+      "month": "February"
+    },
+    {
+      "file": "only_March_train.csv",
+      "rows_raw": 28663,
+      "rows_usable": 28662,
+      "rows_dropped": 1,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 1,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.12,
+      "humidity_max": 0.95,
+      "pressure_min_hpa": 1007.43,
+      "pressure_max_hpa": 1019.43,
+      "recorded_days_from_clock_resets": 21,
+      "partition": "train",
+      "month": "March"
+    },
+    {
+      "file": "March_test.csv",
+      "rows_raw": 1444,
+      "rows_usable": 1444,
+      "rows_dropped": 0,
+      "coercions_to_missing": {
+        "Clean Module Temperature (c)": 0,
+        "Dusty Module Temperature (c)": 0,
+        "Wind Speed (m/s)": 0,
+        "Humidity (%)": 0,
+        "Air Pressure (hPa)": 0,
+        "Tr (Hour)": 0,
+        "Clean Module Short Circuit Current (mA)": 0,
+        "Dusty Module Short Circuit Current (mA)": 0
+      },
+      "invalid_physical_values_set_missing": {
+        "humidity_outside_(0,1]": 0,
+        "pressure_outside_[800,1100]_hPa": 0
+      },
+      "duplicate_rows_on_model_fields": 0,
+      "humidity_min": 0.15,
+      "humidity_max": 0.68,
+      "pressure_min_hpa": 1009.76,
+      "pressure_max_hpa": 1014.09,
+      "recorded_days_from_clock_resets": 1,
+      "partition": "test",
+      "month": "March"
+    }
+  ],
+  "aggregate_summary": [
+    {
+      "model": "Time-bin median",
+      "metric": "r2",
+      "mean": 0.7400445112639248,
+      "median": 0.8445821629159695,
+      "ci95_low_month_block": 0.46864082006496677,
+      "ci95_high_month_block": 0.9101336104843311
+    },
+    {
+      "model": "Linear regression",
+      "metric": "r2",
+      "mean": 0.7535276557336511,
+      "median": 0.8078125088799223,
+      "ci95_low_month_block": 0.6257641570351865,
+      "ci95_high_month_block": 0.8434341755271202
+    },
+    {
+      "model": "Random forest",
+      "metric": "r2",
+      "mean": 0.8471481638049422,
+      "median": 0.8679467232764682,
+      "ci95_low_month_block": 0.8041203120325127,
+      "ci95_high_month_block": 0.8901760155773717
+    },
+    {
+      "model": "Time-bin median",
+      "metric": "mae_mA",
+      "mean": 102.2063272056502,
+      "median": 99.57826507910589,
+      "ci95_low_month_block": 70.57335062884343,
+      "ci95_high_month_block": 133.83930378245697
+    },
+    {
+      "model": "Linear regression",
+      "metric": "mae_mA",
+      "mean": 128.17496505826733,
+      "median": 123.39380909180431,
+      "ci95_low_month_block": 90.3158620451624,
+      "ci95_high_month_block": 173.561405149233
+    },
+    {
+      "model": "Random forest",
+      "metric": "mae_mA",
+      "mean": 86.827032450385,
+      "median": 83.60380694519114,
+      "ci95_low_month_block": 76.87971751594955,
+      "ci95_high_month_block": 100.23273462517712
+    },
+    {
+      "model": "Time-bin median",
+      "metric": "rmse_mA",
+      "mean": 133.81128976843942,
+      "median": 125.25517006386175,
+      "ci95_low_month_block": 93.31590111607618,
+      "ci95_high_month_block": 174.53280289819182
+    },
+    {
+      "model": "Linear regression",
+      "metric": "rmse_mA",
+      "mean": 153.65389088742842,
+      "median": 146.5701906453062,
+      "ci95_low_month_block": 110.97781128496453,
+      "ci95_high_month_block": 204.58077869576238
+    },
+    {
+      "model": "Random forest",
+      "metric": "rmse_mA",
+      "mean": 118.17892499503935,
+      "median": 116.22781926656108,
+      "ci95_low_month_block": 107.76755639428943,
+      "ci95_high_month_block": 132.49977168846885
+    }
+  ],
+  "rf_minus_linear_mae_by_month_mA": {
+    "November": -42.65720729712968,
+    "December": -20.667753316902093,
+    "January": 6.707634740835573,
+    "February": -3.8120819648323305,
+    "March": -146.3102552013831
+  },
+  "wilcoxon_rf_vs_linear_month_average_mae": {
+    "statistic": 2.0,
+    "p_value": 0.1875
+  },
+  "paired_ratio_summary": [
+    {
+      "month": "November",
+      "n": 480,
+      "median": 0.9040390307618402,
+      "q1": 0.897854178377407,
+      "q3": 0.9074631777463897
+    },
+    {
+      "month": "December",
+      "n": 481,
+      "median": 0.9601420598680873,
+      "q1": 0.9537530013571355,
+      "q3": 0.9645185502895132
+    },
+    {
+      "month": "January",
+      "n": 482,
+      "median": 0.9328589280135673,
+      "q1": 0.9271110158215898,
+      "q3": 0.9408591667786407
+    },
+    {
+      "month": "February",
+      "n": 481,
+      "median": 0.7836720712491437,
+      "q1": 0.7793385826771654,
+      "q3": 0.7862182593525878
+    },
+    {
+      "month": "March",
+      "n": 481,
+      "median": 0.962741208295762,
+      "q1": 0.957674661105318,
+      "q3": 0.965531914893617
+    }
+  ]
+}
