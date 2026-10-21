@@ -1,5 +1,7 @@
 # Estimating PV Short-Circuit Current From Weather: Clean vs. Dusty Modules
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23537396.svg)](https://doi.org/10.5281/zenodo.23537396)
+
 A 2026 reanalysis of the field data from my BSc thesis at BRAC University (2021). Two identical PV modules, one cleaned and one left to collect dust, were logged side by side for five months (November to March) together with module temperature, wind speed, humidity and air pressure. The question is how well short-circuit current can be estimated from those same-time readings, and how much dust costs.
 
 The original thesis notebook is in [pv-module-weather-analysis](https://github.com/KhandokerSamiulHoque/pv-module-weather-analysis). This version fixes the evaluation: each month's last recorded day is held out, models only train on earlier data, and the results come with month-level uncertainty.
@@ -36,3 +38,6 @@ Outputs go to `results/run/`. `results/published/` holds the reference results a
 `data/` holds the monthly training and held-out CSVs from the thesis measurement campaign. The thesis was a team project. The data are shared here with my thesis co-authors' consent.
 
 Author: Khandoker Samiul Hoque (ORCID [0009-0008-0756-2395](https://orcid.org/0009-0008-0756-2395)). Code license: MIT. Manuscript in preparation.
+
+## Archived release
+Version 1.0.0 is archived on Zenodo: [doi:10.5281/zenodo.23537397](https://doi.org/10.5281/zenodo.23537397). To cite the latest version instead, use [doi:10.5281/zenodo.23537396](https://doi.org/10.5281/zenodo.23537396).
